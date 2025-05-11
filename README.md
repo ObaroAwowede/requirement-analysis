@@ -70,3 +70,30 @@ Payout to Hosts (scheduled settlements, reporting)</li>
    </ul>
  </li>
 </ol>
+
+<h2>Use Case Diagrams.</h2>
+
+<p> A use case diagram is a type of Unified Modeling Language (UML) diagram that visually represents the interactions between users (actors) and the system to achieve specific goals (use cases). It provides a high-level view of the system's functionality from the perspective of the users.   
+The components include: </p>
+
+<ul>
+ <li>Actors: These represent external entities that interact with the system. Actors can be human users, other systems, or external hardware. They are typically drawn as stick figures. The key is that an actor is external to the system but interacts with it.</li>
+
+ <li>Use Cases: These represent the specific goals or tasks that actors can achieve by interacting with the system. They describe a sequence of actions that provide a measurable result to the actor. Use cases are typically drawn as ovals and are named using verbs that describe the actor's goal (e.g., "Book Hotel Room," "Search for Flight").</li> 
+
+ <li>
+  Relationships: Lines connecting actors and use cases show how they interact.   
+  <ol>
+   <li>Association: A solid line between an actor and a use case indicates that the actor participates in that use case. It shows a communication pathway.   </li>
+   <li>Include: A dashed arrow pointing from one use case to another, labeled with "&lt;&lt;include>>", indicates that the first use case includes the behavior described in the second use case. This is used to avoid redundancy by breaking down complex use cases into smaller, reusable ones. The included use case is essential for the base use case to complete. </li>  
+   <li>Extend: A dashed arrow pointing from one use case to another, labeled with "&lt;&lt;extend>>", indicates that the behavior of the extended use case can be inserted into the extending use case under certain conditions. The extending use case can function independently even without the extended part. The extension point is typically defined within the base use case.  </li> 
+   <li>Generalization (for Actors): A solid line with a triangular arrowhead pointing from a more specific actor to a more general actor. This indicates that the more specific actor inherits the behaviors of the more general actor and can also have its own specific interactions.   </li>
+  </ol>
+ </li>
+ <li>System Boundary: A rectangle drawn around the use cases (and sometimes excluding the actors) represents the boundary of the system being modeled. It visually distinguishes what is inside the system from what is outside.   
+</li>
+</ul>
+
+
+
+

@@ -22,9 +22,13 @@ Requirement Analysis is the process of gathering, validating, and documenting wh
  <li> <strong>Eliciting Requirements:</strong> Going beyond simple collection, this stage actively uncovers both stated and unstated needs. Techniques like in-depth interviews, workshops, brainstorming, prototyping, use cases, and observation are used to find hidden requirements and resolve conflicting needs early on.</li>
  <li> <strong>Documenting Requirements:</strong> Once gathered and elicited, requirements are formally documented in a clear, consistent, and traceable manner, often in a Software Requirements Specification (SRS). This document acts as the main reference for developers, testers, and stakeholders, detailing what the system will do, its limitations, business rules, and assumptions.</li>
 <li> <strong>Analyzing and Modeling Requirements:</strong>.
-<li>Analysis: This involves a close examination of the documented requirements to identify any inconsistencies, dependencies, priorities, and potential challenges. Business analysts and architects assess the clarity and feasibility of each requirement and ensure it aligns with business goals. Negotiation may occur to resolve conflicts and ensure achievable requirements.</li>
-<li>
- Modeling: Visual or formal representations of the requirements are created to improve understanding and communication. Techniques like UML diagrams (use-case, class, data-flow, activity, state machine) help stakeholders visualize the system's behavior and structure, reducing ambiguity and aiding in validation</li>
+ <ol>
+  <li>Analysis: This involves a close examination of the documented requirements to identify any inconsistencies, dependencies, priorities, and potential challenges. Business analysts and architects assess the clarity and feasibility of each requirement and ensure it aligns with business goals. Negotiation may occur to resolve conflicts and ensure achievable requirements.</li>
+  <li>
+ Modeling: Visual or formal representations of the requirements are created to improve understanding and communication. Techniques like UML diagrams (use-case, class, data-flow, activity, state machine) help stakeholders visualize the system's behavior and structure, reducing ambiguity and aiding in validation
+  </li>
+ </ol>
+
 </li>
 <li> <strong>Validating Requirements:</strong> This final step confirms that the documented and modeled requirements accurately reflect the stakeholders' needs and are consistent, complete, and testable. Methods like reviews, walkthroughs, inspections, defining acceptance criteria, and prototyping are used to verify accuracy. Upon successful validation, the SRS becomes the approved foundation for the design and development phases.</li>
 </div>

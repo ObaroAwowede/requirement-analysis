@@ -94,6 +94,76 @@ The components include: </p>
 </li>
 </ul>
 
+<h2>Acceptance Criteria</h2>
+<p>They define the specific conditions that must be met for a requirement to be considered fully implemented and accepted by the stakeholders. Think of them as the "definition of done" for each requirement. 
+ 
+ Essentially they provide:</p>
+<li>Clear Understanding: They make requirements clear and unambiguous for everyone.</li>
+<li>Precise Scope: They define the exact boundaries of each requirement, preventing scope creep.</li>
+<li>Testable Conditions: They serve as the direct basis for creating test cases.</li>
+<li>Requirement Validation: Defining them helps uncover flaws in the requirements early on.</li>
+<li>Stakeholder Agreement: They facilitate collaboration and agreement on what's needed.</li>
+<li>Objective Evaluation: They provide a measurable way to determine if a requirement is met.</li>
+
+<h2>Acceptance Criteria for the Checkout feature in the booking management system</h2>
+
+<ol>
+ 
+<li>
+ Successful Checkout:
+ <ul>
+  <li>Given a confirmed booking, when the user initiates the checkout process within the allowed timeframe, then the system should successfully record the checkout in the system.</li>
+  <li>>Given a user has checked out, when the user or an administrator views the booking details, then the booking status should be clearly marked as "Checked Out"</li>
+  <li>Given a successful checkout, then the system may trigger a feedback request or survey to the user (optional, depending on system features).</li>
+ </ul>
+ 
+</li>
+
+<li>
+ Checkout with Outstanding Balance:
+ <ul>
+  <li>Given a booking with an outstanding balance, when the user initiates checkout, then the system should prompt the user to settle the remaining balance. </li>
+  <li>Given the user successfully pays the outstanding balance during checkout, then the system should record the checkout with the payment details.</li>
+  <li>Given the user is unable to pay the outstanding balance during checkout (depending on system policy), then the system should either prevent checkout or mark the booking with an "Overdue Payment" status.</li>
+  <li>Given the user is unable to pay the outstanding balance during checkout (depending on system policy), then the system should either prevent checkout or mark the booking with an "Overdue Payment" status.</li>
+ </ul>
+</li>
+
+<li>
+ Early Checkout (if allowed by policy):
+ <ul>
+  <li>Given a confirmed booking, when the user initiates checkout before the scheduled departure date (if the hotel policy allows), then the system should successfully record the early checkout.</li>
+  <li>Given an early checkout occurs (if applicable based on policy), then the system should calculate any applicable refunds or charges based on the hotel's early departure policy.</li>
+ </ul>
+</li>
+
+<li>
+ Late Checkout (if allowed by policy):
+ <ul>
+  <li>Given a confirmed booking, when the user requests and is granted a late checkout extension by hotel staff, then the system should allow the user to checkout beyond the original departure time, up to the approved extended time.</li>
+  <li>Given a late checkout occurs (if applicable based on policy), then the system should calculate any additional charges based on the hotel's late checkout policy.</li>
+ </ul>
+</li>
+
+<li>
+ System Updates:
+ <ul>
+  <li>Given a successful checkout, then the system should update the room's availability status to "available" or "ready for cleaning".</li>
+  <li>Given a checkout is recorded, then the system should log the checkout event with a timestamp and the user or staff member who initiated it.</li>
+ </ul>
+</li>
+
+<li>
+ Error Handling:
+ <ul>
+  <li>Given a system error occurs during the checkout process, then the system should display a user-friendly error message and allow the user to retry or contact support.</li>
+  <li>Given the user attempts to checkout before the allowed time (e.g., immediately after check-in), then the system should display a message indicating the earliest possible checkout time.</li>
+ </ul>
+</li>
+
+</ol>
+
+
 
 
 
